@@ -54,13 +54,11 @@ const handleStudent = {
          ) {
          return StudentType.Good
       } else if (averageScore >= 7 && 
-         (typeOfConduct === ConductType.Good || typeOfConduct === ConductType.Rather) && 
-         ((mathScore >= 7 && literatureScore >= 7 && englishScore >= 7))
+         (typeOfConduct === ConductType.Good || typeOfConduct === ConductType.Rather)
          ) {
          return StudentType.Rather
       } else if (averageScore >= 6 && 
-         (typeOfConduct !== ConductType.Weak) && 
-         (mathScore >= 6 && literatureScore >= 6 && englishScore >= 6)
+         (typeOfConduct !== ConductType.Weak) 
          ) {
          return StudentType.Medium
       } else {
